@@ -9,7 +9,7 @@
  }
  .content-head{
     font-weight: 800;
-    font-size: 20px;
+    font-size: 22px;
     margin-left:20px;
     font-family: Arial, Helvetica, sans-serif;
  }
@@ -26,5 +26,15 @@
     margin-top:30px;
     margin-bottom: 10px;
  }
+ .pulse-css
+{
+   border-radius: 3.5rem;
+   height: 11px;
+   position: absolute;
+   background: #FFBC11;
+   right: 0px;
+   top: 0px;
+   width: 11px;
+}
 
  

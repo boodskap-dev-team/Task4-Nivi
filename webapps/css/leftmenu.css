@@ -38,6 +38,9 @@
 .lists li:hover{
    
     background-color: #ebe8e8;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 10px;
    
 }
 /* .lists .active
@@ -48,7 +51,7 @@
 } */
 .lists li
 {
-    margin:5px;
+    margin:10px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -76,4 +79,8 @@
     border-radius: 100%;
     line-height: 80px;
     text-align: center;
+}
+.lists img
+{
+    margin-right: 10px;
 }
