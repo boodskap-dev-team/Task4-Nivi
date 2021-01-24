@@ -1,111 +1,148 @@
-<link rel="stylesheet" href="css/leftmenu.css">
 <style>
-    ::-webkit-scrollbar {
-    width: 10px;
-    border-radius: 5px;
-    
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #868686; 
-  }
-  
-  /* Handle on hover */
-  /* ::-webkit-scrollbar-thumb:hover {
-    background: #888; 
-  }  */
-  .copyright
-  {
-      font-size: 12px;
-      color: grey;
-      margin-bottom: 50px;
-  }
+    .colr:hover
+    {
+ color: #194595 !important;
+    }
+    .icon-speedometer:hover
+    {
+        color: #194595 !important;
+    }
+    .sidebar-nav ul li a.active, .sidebar-nav ul li a.active i, .sidebar-nav ul li a:hover, .sidebar-nav ul li a:hover i {
+    color: #787f91 !important;
+}
 </style>
-<aside>
-    
-<div class="sidenav" style="padding-left: 30px;position: fixed;overflow:auto;">
-<div class="sidenav-scroll">
-    <div class="header-left">                  
-        <img src="images/logo.png">
-     
-        <img src="images/logo-text.png" width="100px">
-     
-    </div>
+<aside class="left-sidebar">
+    <!-- Sidebar scroll-->
+    <div class="scroll-sidebar">        
+        <nav class="sidebar-nav">
+            <ul id="sidebarnav">
+                <li class="active ac colr"> <a class="has-arrow active" href="#" style="
+                    color: #194595 !important;
+                font-weight: 500;
+                border-left: none !important;
+                border-right: 3px solid  #194595 !important;">
+                    <i class="icon-speedometer" style=" color: #194595 !important;"></i>
+                    <span class="hide-menu">Dashboard</span></a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li class="dp"><a   href="#" >Dashboard </a></li>
+                        <li class="dp"><a   href="#" >Workout statistic </a></li>     
+                        <li class="dp"><a   href="#" >Workout plan </a></li>
+                        <li class="dp"><a   href="#" >Distance map </a></li>
+                        <li class="dp"><a   href="#" >Diet food menu </a></li>     
+                        <li class="dp"><a   href="#" > Personal record </a></li>     
+                    </ul>
+                </li>
+ 
 
-    <ul class="lists" style="margin-top: 30px;margin-left: 20px;">
-        <li><a href="#">
-            <!-- <div class="active"> -->
-               <img src="images/home.svg" height="20px" width="20px">
-               <!-- #868686 -->
-                <span class="nav-text">Dashboard</span>
-                <!-- </div> -->
-            </a>
-           
-        </li>
-        <li><a>
-            <img src="images/apps.svg" height="20px" width="20px">
-                <span class="nav-text">Apps</span>
-            </a>
-            
-        </li>
-        <li><a>
-            <img src="images/bar-chart.svg" height="20px" width="20px">
-                <span class="nav-text">Charts</span>
-            </a>
-            
-        </li>
-        <li><a>
-            <img src="images/bootstrap.svg" height="20px" width="20px">
-                <span class="nav-text">Bootstrap</span>
-            </a>
-           
-        </li>
-        <li><a>
-            <img src="images/web-plugin.svg" height="20px" width="20px">
-                <span class="nav-text">Plugins</span>
-            </a>
-             
-        </li>
-        <li><a>
-            <img src="images/app.svg" height="20px" width="20px">
-                <span class="nav-text">Widget</span>
-            </a>
-        </li>
-        <li><a>
-            <img src="images/clipboard.svg" height="20px" width="20px">
-                <span class="nav-text">Forms</span>
-            </a>
-            
-        </li>
-        <li><a>
-            <img src="images/apps.svg" height="20px" width="20px">
-                <span class="nav-text">Table</span>
-            </a>
-        </li>
-        <li><a>
-            <img src="images/apps.svg" height="20px" width="20px">
-                <span class="nav-text">Pages</span>
-            </a>
-            
-        </li>
-    </ul>
-    <div class="comment mr-4 mt-5" style="background: #0B2A97;
-    padding:12px;
-    display: flex;
-    align-items: center;
-    border-radius: 1.25rem;
-    position: relative;">    
-      <img src="images/calendar.png" alt="" height="40px" width="40px" >
-     <span>  <p style="color: white; font-size: 16px;font-weight: 500;margin:5px;padding-left: 5px;">Create Workout Plan Now</p></span>
+                <li class="colr"> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                    <i class="icon-speedometer"></i><span class="hide-menu">Apps</span></a>
+                    <ul aria-expanded="false" class="collapse">
+
+                        <li class="dp"><a  href="#">charts </a></li>
+                        <li class="dp"><a  href="#">charts </a></li> 
+                        <li class="dp"><a  href="#">charts </a></li>   
+                        <li class="dp"><a  href="#">charts </a></li>             
+                    </ul>
+                </li>
+                
+                <li class="colr"> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                    <i class="icon-speedometer"></i><span class="hide-menu">Charts</span></a>
+                    <ul aria-expanded="false" class="collapse">
+
+                        <li class="dp"><a  href="#">charts </a></li>
+                        <li class="dp"><a  href="#">charts </a></li> 
+                        <li class="dp"><a  href="#">charts </a></li>   
+                        <li class="dp"><a  href="#">charts </a></li>             
+                    </ul>
+                </li>
+                
+                <li class="colr"> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                    <i class="icon-speedometer"></i><span class="hide-menu">Bootstrap</span></a>
+                    <ul aria-expanded="false" class="collapse">
+
+                        <li class="dp"><a  href="#">charts </a></li>
+                        <li class="dp"><a  href="#">charts </a></li> 
+                        <li class="dp"><a  href="#">charts </a></li>   
+                        <li class="dp"><a  href="#">charts </a></li>             
+                    </ul>
+                </li>
+                
+                <li class="colr"> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                    <i class="icon-speedometer"></i><span class="hide-menu">Plugins</span></a>
+                    <ul aria-expanded="false" class="collapse">
+
+                        <li class="dp"><a  href="#">charts </a></li>
+                        <li class="dp"><a  href="#">charts </a></li> 
+                        <li class="dp"><a  href="#">charts </a></li>   
+                        <li class="dp"><a  href="#">charts </a></li>             
+                    </ul>
+                </li>
+                
+                <li class="colr"> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                    <i class="icon-speedometer"></i><span class="hide-menu">Widget</span></a>
+                    <ul aria-expanded="false" class="collapse">
+
+                        <li class="dp"><a  href="#">charts </a></li>
+                        <li class="dp"><a  href="#">charts </a></li> 
+                        <li class="dp"><a  href="#">charts </a></li>   
+                        <li class="dp"><a  href="#">charts </a></li>             
+                    </ul>
+                </li>
+                <li class="colr"> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                    <i class="icon-speedometer"></i><span class="hide-menu">Forms</span></a>
+                    <ul aria-expanded="false" class="collapse">
+
+                        <li class="dp"><a  href="#">charts </a></li>
+                        <li class="dp"><a  href="#">charts </a></li> 
+                        <li class="dp"><a  href="#">charts </a></li>   
+                        <li class="dp"><a  href="#">charts </a></li>             
+                    </ul>
+                </li>
+                
+
+                <li class="colr"> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                    <i class="icon-speedometer"></i><span class="hide-menu">Table</span></a>
+                    <ul aria-expanded="false" class="collapse">
+
+                        <li class="dp"><a  href="#">charts </a></li>
+                        <li class="dp"><a  href="#">charts </a></li> 
+                        <li class="dp"><a  href="#">charts </a></li>   
+                        <li class="dp"><a  href="#">charts </a></li>             
+                    </ul>
+                </li>
+                
+
+                <li class="colr"> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                    <i class="icon-speedometer"></i><span class="hide-menu">Pages</span></a>
+                    <ul aria-expanded="false" class="collapse">
+
+                        <li class="dp"><a  href="#">charts </a></li>
+                        <li class="dp"><a  href="#">charts </a></li> 
+                        <li class="dp"><a  href="#">charts </a></li>   
+                        <li class="dp"><a  href="#">charts </a></li>             
+                    </ul>
+                </li>
+                
+
+
+               
+            </ul>
+            <div class="comment mr-4 mt-5" style="background: #0B2A97;
+            padding:12px;
+            display: flex;
+            align-items: center;
+            border-radius: 1.25rem;
+            margin-left: 10px;
+            position: relative;">    
+              <img src="images/calendar.png" alt="" height="40px" width="40px" >
+             <span>  <p style="color: white; font-size: 16px;font-weight: 500;margin:5px;padding-left: 5px;">Create Workout Plan Now</p></span>
+            </div>
+            <div class="copyright mt-3 mb-5" style="margin-left: 10px;">
+                <p><strong>Gymove Fitness Admin Dashboard</strong>© 2020 All Rights Reserved</p>
+                <p>Made with <span class="heart"><i class="fa fa-heart" aria-hidden="true" style="color: red;"></i></span> by DexignZone</p>
+            </div> 
+        </nav>
+        <!-- End Sidebar navigation -->
     </div>
-    <div class="copyright mt-3 mb-5">
-        <p><strong>Gymove Fitness Admin Dashboard</strong>© 2020 All Rights Reserved</p>
-        <p>Made with <span class="heart"></span> by DexignZone</p>
-    </div> 
-</aside> 
+    <!-- End Sidebar scroll-->
+</aside>
