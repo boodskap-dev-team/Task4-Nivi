@@ -1,6 +1,93 @@
 <link rel="stylesheet" href="css/snapshot.css"/>
 <div class="container-fluid">
-  <div class="row mb-5">
+    <div class="row one" style="background-color: white;">
+        <div class="col-md-12">
+            <span class="title-span" style="color: grey;font-weight: 500;">Home</span>
+              <span class="title-span" style="margin-left: 2px;margin-right: 2px;">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </span>
+              <span class="title-span" style="color: grey;font-weight: 500;">Snapshot</span>
+              <span class="title-span" style="margin-left: 2px;margin-right: 2px;">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </span>
+              <span class="title-span" style="color:#374fa6;font-weight: 500;">Air Conditioner</span>
+             
+          </div>         
+    </div>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-6">        
+                 <div  style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;">
+                  <img src="images/ac.png" width="100%" height="380px" style="position: relative;"/>
+                  <span class="in"></span>                  
+                  <div class="show aircool"><p>AC POWERED ON</p></div>
+                  <div class="show aircool active"><p>AC POWERED OFF</p></div>
+               </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card"  style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;">
+                <div class="card-header" style="border-bottom: 1px solid rgb(160, 157, 157);">
+                    <h4 class="headers pt-2">Description</h4>
+                </div>
+                
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-6 p-2">
+                       <h5>TYPE</h5>
+                       <p>Split AC </p>
+                      </div>
+                      <div class="col-6 p-2">                   
+                        <h5>Capacity</h5>
+                        <p>1.5 Ton</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 p-2">
+                       <h5>Temperature</h5>
+                       <p>25℃</p>
+                      </div>
+                      <div class="col-6 p-2">
+                       <h5>Mode</h5>
+                       <p>Cool</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 p-2">
+                         <h5>Swing</h5>
+                         <p>ON</p>
+                        </div>
+                        <div class="col-6 p-2">
+                         <h5>Timer</h5>
+                         <p>OFF</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 p-2">
+                         <h5>SLEEP</h5>
+                         <p>ON</p>
+                        </div>
+                        <div class="col-6 p-2">
+                         <h5>TURBO</h5>
+                         <p>OFF</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 p-2">
+                         <h5>CLOCK</h5>
+                         <p>ON</p>
+                        </div>
+                        <div class="col-6 p-2">
+                         <h5>INTELLIGENT EYE</h5>
+                         <p>OFF</p>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+  <div class="row mt-2 mb-5">
+      <div class="col-md-2">
+
+      </div>
     <div
       class="col-md-8"
       style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; margin-top: 30px; border-style: groove;"
@@ -140,11 +227,11 @@
           </button>
         </div> -->
     <div class="col-md-6">
-        <button type="button" id="onn" class="btn" style="
+        <button type="button" id="onn" class="btn sh" style="
         background-color: rgb(164, 199, 181);width: 100%;border-radius: 50px;margin: 5px;">ON</button>
     </div>
     <div class="col-md-6">
-        <button type="button" id="offf" class="btn" style="
+        <button type="button" id="offf" class="btn sh" style="
         background-color: rgb(245, 185, 146);width: 100%;border-radius: 50px;margin: 5px;"">OFF</button>
     </div>
     </div>
@@ -252,7 +339,7 @@
       <div class="row">
           <div class="col-md-4 text-center">
             <button type="button" class="btn text-center" style="
-            background-color: #cbd1d6;margin: 5px;">MODE</button>
+            background-color: #cbd1d6;margin: 5px;"><i class="fa fa-moon-o m-2" aria-hidden="true"></i>MODE</button>
             <button type="button" class="btn text-center" style="
             background-color: #cbd1d6;margin: 5px;">TURBO</button>
            
@@ -262,6 +349,9 @@
               <div class="col-md-12">
             <button type="button" class="btn" style="
             background-color: #cbd1d6;margin: 5px;"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+           </div>
+           <div class="col-md-12">
+               Temp
            </div>
            <div class="col-md-12">
            <button type="button" class="btn" style="
@@ -368,14 +458,14 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="row">
+    <div class="col-md-2">
+      <!-- <div class="row">
         <div class="col-md-12">
           <img src="images/ac.png" width="100%" height="500px" style="position: relative;"/>
           <span class="in"></span>
           <div id="shows" class="show hide">AC POWERED ON</div>
           <div id="hides" class="show hide">AC POWERED OFF</div>
-        </div>
+        </div> -->
       </div>
       <!-- <div class="row m-4">
         <div class="col-md-12">
@@ -393,13 +483,26 @@
     <div class="row m-4">
         <div class="col-md-12">
           <div class="card" style="border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;">
-            <div class="card-header">Temperature Tracking</div>
+            <!-- style="border-bottom: 1px solid rgb(160, 157, 157);" -->
+            <div class="card-header">  <h4 class="headers pt-2">AC Usage Hours</h4></div>
 
             <div class="card-body">
               <div id="main" style="width: 100%; height: 400px"></div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="row m-4">
+          <div class="col-md-12">
+            <div class="card" style="border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;">
+                <!-- style="border-bottom: 1px solid rgb(160, 157, 157);" -->
+                <div class="card-header">  <h4 class="headers pt-2">AC Power Consumption</h4></div>
+    
+                <div class="card-body">
+                  <div id="mains" style="width: 100%; height: 400px"></div>
+                </div>
+              </div>
+          </div>
       </div>
 
   </div>
@@ -409,23 +512,103 @@
 
     // specify chart configuration item and data
     var option = {
+    backgroundColor: "#CBD1D6",
+    grid: {
+		left: '12%',
+		top: '5%',
+		bottom: '12%',
+		right: '8%'
+	},
     xAxis: {
-        type: 'category',
-        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+        data: ['18Jan', '19Jan', '20Jan', '21Jan', '22Jan', '23Jan', '24Jan', '25Jan', ],
+       axisTick: {
+			show: false
+		},
+		axisLine: {
+			lineStyle: {
+				color: 'rgba(255, 129, 109, 0.1)',
+				width: 1 //这里是为了突出显示加上的
+			}
+		},
+		axisLabel: {
+			textStyle: {
+				color: '#1B4798',
+				fontSize: 12
+			}
+		}
     },
-    yAxis: {
-        min: 1,
+    yAxis: [{
+             min: 1,
         max: 24,
-        type: 'value'
-    },
+			splitNumber: 2,
+			axisTick: {
+				show: false
+			},
+			axisLine: {
+				lineStyle: {
+					color: 'rgba(255, 129, 109, 0.1)',
+					width: 1 //这里是为了突出显示加上的
+				}
+			},
+			axisLabel: {
+				textStyle: {
+					color: '#1B4798'
+				}
+			},
+			splitArea: {
+				areaStyle: {
+					color: 'rgba(255,255,255,.5)'
+				}
+			},
+			splitLine: {
+				show: true,
+				lineStyle: {
+					color: 'rgba(255, 129, 109, 0.1)',
+					width: 0.5,
+					type: 'dashed'
+				}
+			}
+		}
+	],
     series: [{
-        data: [12,9,6,24,19,22,17],
-        type: 'bar',
-          barWidth:25,
-color: '#5458b6',
-   
-        showBackground: false,
-     
+        name: 'hill',
+        type: 'pictorialBar',
+        barCategoryGap: '0%',
+        symbol: 'path://M0,10 L10,10 C5.5,10 5.5,5 5,0 C4.5,5 4.5,10 0,10 z',
+        label: {
+			show: true,
+			position: 'top',
+			distance: 15,
+			color: '#1B4798',
+			fontWeight: 'bolder',
+			fontSize: 20,
+		},
+        itemStyle: {
+            normal: {
+				color: {
+					type: 'linear',
+					x: 0,
+					y: 0,
+					x2: 0,
+					y2: 1,
+					colorStops: [{
+							offset: 0,
+							color: '#1B4798' //  0%  处的颜色
+						},
+						{
+							offset: 1,
+							color: 'rgba(232, 94, 106, .1)' //  100%  处的颜色
+						}
+					],
+					global: false //  缺省为  false
+				}
+			},
+			emphasis: {
+				opacity: 1
+			}
+        },
+        data: [22, 15, 4, 16, 12, 9, 8, 3],
+        z: 10
     }]
 };
     // use configuration item and data specified to show chart
@@ -433,11 +616,9 @@ color: '#5458b6',
     $( "#onn" ).click(function() {
     $( ".in" ).toggleClass( "on" );
     // $('#shows').toggleClass("show");
-    // $('#onn').toggle("#shows");
   });
   $( "#offf" ).click(function() {
     $( ".in" ).toggleClass( "off" );
-    // $('#onn').toggle("#hides");
    
   });
 
@@ -548,6 +729,124 @@ setTimeout(update_time, 1000);
  
  
 
+
+
+$('.sh').click(function() {
+  var cur = $('.sh').index($(this)); // get the index of the clicked link
+  $('.show').removeClass('active'); // hide all of the sections
+  $('.show').eq(cur).addClass('active'); // show the section at the same index of the clicked link 
+});
+
+
+
+
+
+var myChart = echarts.init(document.getElementById("mains"));
+
+// specify chart configuration item and data
+var option = {
+    grid: {
+        left: '5%',
+        right: '5%',
+        bottom: '5%',
+        top: '10%',
+        containLabel: true
+    },
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'none'
+        },
+        formatter: function(params) {
+            return params[0].name + '<br/>' +
+                "<span style='display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:rgba(36,207,233,0.9)'></span>" +
+                params[0].seriesName + ' : ' + Number((params[0].value.toFixed(4) / 10000).toFixed(2)).toLocaleString() + ' 万元<br/>'
+        }
+    },
+    backgroundColor: 'white',
+    xAxis: {
+        show: true,
+        type: 'value',
+        
+        
+    },
+    yAxis: [{
+        type: 'category',
+        inverse: true,
+        axisLabel: {
+            show: true,
+            textStyle: {
+                color: '#1b4798'
+            },
+        },
+        splitLine: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            show: false
+        },
+        data: ['18Jan', '19Jan', '20Jan', '21Jan', '22Jan']
+    }, {
+        type: 'category',
+        inverse: true,
+        axisTick: 'none',
+        axisLine: 'none',
+        show: true,
+        axisLabel: {
+            textStyle: {
+                color: '#1b4798',
+                fontSize: '12'
+            },
+            formatter: function(value) {
+                if (value >= 10000) {
+                    return (value / 10000).toLocaleString() + 'V';
+                } else {
+                    return value.toLocaleString();
+                }
+            },
+        },
+        data: [50000000, 22000000, 10000000, 5000000, 1]
+    }],
+    series: [{
+            
+            type: 'bar',
+            zlevel: 1,
+            itemStyle: {
+                normal: {
+                    barBorderRadius: 30,
+                    color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
+                        offset: 0,
+                        color: 'rgb(57,89,255,1)'
+                    }, {
+                        offset: 1,
+                        color: 'rgb(46,200,207,1)'
+                    }]),
+                },
+            },
+            barWidth: 20,
+            data: [50000000, 22000000, 10000000, 5000000, 1],
+            
+        },
+        {
+           
+            type: 'bar',
+            barWidth: 20,
+            barGap: '-100%',
+            data: [50000000, 50000000, 50000000, 50000000, 1],
+            itemStyle: {
+                normal: {
+                    color: 'rgba(24,31,68,1)',
+                    barBorderRadius: 30,
+                }
+            },
+        },
+    ]
+};
+// use configuration item and data specified to show chart
+myChart.setOption(option);
   </script>
  
  
