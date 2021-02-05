@@ -106,6 +106,16 @@ UIRoutes.prototype.init = function () {
             basePath: self.app.conf.web.basepath
         });
     });
+    self.router.get('/snapshot', sessionCheck, function (req, res) {
+
+        res.render('home/snapshot.html', {
+            layout: false,
+            sessionObj: req.session['sessionObj'],
+            config: self.app.conf,
+            basePath: self.app.conf.web.basepath
+        });
+    });
+
 
 
     self.app.use(self.app.conf.web.basepath, self.router);

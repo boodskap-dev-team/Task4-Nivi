@@ -10,6 +10,35 @@
     .sidebar-nav ul li a.active, .sidebar-nav ul li a.active i, .sidebar-nav ul li a:hover, .sidebar-nav ul li a:hover i {
     color: #787f91 !important;
 }
+@media  (min-width: 768px) {
+    
+    /* .comment
+    {
+        width: 100px;
+    }
+    .copyright
+    {
+        width: 100px;
+    } */
+    /* .comment
+    {
+       display: block;
+    }
+    .copyright
+    {
+        display: block;
+        
+
+    } */
+    .sidebar-nav ul li a.active {
+   
+    background-color: #E6E9F4;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+
+}
 </style>
 <aside class="left-sidebar">
     <!-- Sidebar scroll-->
@@ -21,10 +50,11 @@
                 font-weight: 500;
                 border-left: none !important;
                 border-right: 3px solid  #194595 !important;">
-                    <i class="icon-speedometer" style=" color: #194595 !important;"></i>
+                <i class="fa fa-tachometer" style=" color: #194595 !important;" aria-hidden="true"></i>
+                
                     <span class="hide-menu">Dashboard</span></a>
                     <ul aria-expanded="false" class="collapse">
-                        <li class="dp"><a   href="#" >Dashboard </a></li>
+                        <li class="dp"><a onclick="loadMainPage('/snapshot')" href="#/snapshot">Snapshot</a></li>
                         <li class="dp"><a   href="#" >Workout statistic </a></li>     
                         <li class="dp"><a   href="#" >Workout plan </a></li>
                         <li class="dp"><a   href="#" >Distance map </a></li>
@@ -35,7 +65,7 @@
  
 
                 <li class="colr"> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
-                    <i class="icon-speedometer"></i><span class="hide-menu">Apps</span></a>
+                    <i class="fa fa-android" aria-hidden="true"></i><span class="hide-menu">Apps</span></a>
                     <ul aria-expanded="false" class="collapse">
 
                         <li class="dp"><a  href="#">charts </a></li>
@@ -46,7 +76,7 @@
                 </li>
                 
                 <li class="colr"> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
-                    <i class="icon-speedometer"></i><span class="hide-menu">Charts</span></a>
+                    <i class="fa fa-line-chart" aria-hidden="true"></i><span class="hide-menu">Charts</span></a>
                     <ul aria-expanded="false" class="collapse">
 
                         <li class="dp"><a  href="#">charts </a></li>
@@ -57,7 +87,7 @@
                 </li>
                 
                 <li class="colr"> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
-                    <i class="icon-speedometer"></i><span class="hide-menu">Bootstrap</span></a>
+                    <i class="fa fa-globe" aria-hidden="true"></i><span class="hide-menu">Bootstrap</span></a>
                     <ul aria-expanded="false" class="collapse">
 
                         <li class="dp"><a  href="#">charts </a></li>
@@ -101,7 +131,7 @@
                 
 
                 <li class="colr"> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
-                    <i class="icon-speedometer"></i><span class="hide-menu">Table</span></a>
+                    <i class="fa fa-table" aria-hidden="true"></i><span class="hide-menu">Table</span></a>
                     <ul aria-expanded="false" class="collapse">
 
                         <li class="dp"><a  href="#">charts </a></li>
@@ -113,7 +143,7 @@
                 
 
                 <li class="colr"> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
-                    <i class="icon-speedometer"></i><span class="hide-menu">Pages</span></a>
+                    <i class="fa fa-file" aria-hidden="true"></i><span class="hide-menu">Pages</span></a>
                     <ul aria-expanded="false" class="collapse">
 
                         <li class="dp"><a  href="#">charts </a></li>
