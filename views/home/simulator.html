@@ -1,0 +1,153 @@
+<link rel="stylesheet" href="css/simulator.css" />
+<div class="container-fluid">
+  <div class="row simulator_head">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card">
+          <div class="card-body form_page">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="status">AC STATUS</label>
+                <select class="form-control" id="status">
+                  <option>--Select--</option>
+                  <option>ON</option>
+                  <option>OFF</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="temperature">AC TEMPERATURE</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  min="16"
+                  max="30"
+                  id="temperature"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="outsidetemperature">OUTSIDE TEMPERATURE</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="outsidetemperature"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="mode">MODE</label>
+                <select class="form-control" id="mode">
+                  <option>--Select--</option>
+                  <option>AUTO</option>
+                  <option>COOL</option>
+                  <option>DRY</option>
+                  <option>FAN</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="fanspeed">FANSPEED</label>
+                <select class="form-control" id="fanspeed">
+                  <option>--Select--</option>
+                  <option>LOW</option>
+                  <option>MEDIUM</option>
+                  <option>HIGH</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="power">POWER</label>
+                <input type="number" class="form-control" id="power" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="swing">SWING</label>
+                <select class="form-control" id="swing">
+                  <option>--Select--</option>
+                  <option>ON</option>
+                  <option>OFF</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="sleep">SLEEP</label>
+                <select class="form-control" id="sleep">
+                  <option>--Select--</option>
+                  <option>ON</option>
+                  <option>OFF</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              
+              <div class="form-group col-md-6">
+                <label for="timeron">TIMER ON</label>
+              
+                <select class="form-control" id="timeron">
+                  <option>--Select--</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="selfclean">SELF CLEAN</label>
+                <select class="form-control" id="selfclean">
+                  <option>--Select--</option>
+                  <option>ON</option>
+                  <option>OFF</option>
+                 
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="timeroff">TIMER OFF</label>
+                <select class="form-control" id="timeroff">
+                  <option>--Select--</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </div>
+          
+              <div class="form-group col-md-6">
+                <label for="reset">RESET</label>
+                <select class="form-control" id="reset">
+                  <option>--Select--</option>
+                  <option>TimerOn</option>
+                  <option>TimerOff</option>
+                  <option>NO</option>
+                </select>
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary sendbutton" id="sendvalues">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+<script src="js/sim.js"></script>
