@@ -19,7 +19,7 @@ Common.prototype.commonSearch = function (tablename, req, res) {
 
     const boodskap = new Boodskap(self.app, req['session']['sessionObj'].token);
 
-    boodskap.elasticSearch(tablename, req.body.query, function (status, result) {
+    boodskap.elasticSearch(tablename, req.body, function (status, result) {
 
         if (status) {
             res.json({ status: true, result: result });

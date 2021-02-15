@@ -16,9 +16,9 @@
     </div>
 <!-- Remote start -->
     <div class="row" style="margin-top: 20px;">
-      
+      <div class="col-md-2"></div>
         <div
-        class="col-md-8"
+        class="col-md-4"
         style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; margin-top: 10px; border-style: groove;" >
         <div class="row first">
           <div class="col-md-12">
@@ -30,54 +30,34 @@
                 background-color: rgb(248, 233, 233);
               "
             >
-          <h2 class="text-center temp" style="margin: 10px;">25℃</h2> 
+          <h2 class="text-center temp" id="temperature" style="margin: 10px;"></h2> 
           
-               <div class="row" style="padding: 40px;">
+                <!-- <div class="row" style="padding: 40px;">
   
-               <div class="col-md-4">
-                   <h6 style="margin: 5px;">Fan Speed</h6>
-                <div class="progress progress-bar-vertical ml-2">
-                  <div class="progress-bar fanspeed" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height:10px;">
-                   
+               <div class="col-md-12" style="display: block;" id="modes"> 
+                  <div class="row">
+                    <div class="col-md-6">
+                      <button type="button" class="btn text-center" style="
+              background-color: #cbd1d6;margin: 5px;">AUTO</button>
+                    </div>
+                    <div class="col-md-6">
+                      <button type="button" class="btn text-center" style="
+              background-color: #cbd1d6;margin: 5px;">COOL</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <button type="button" class="btn text-center" style="
+              background-color: #cbd1d6;margin: 5px;">DRY</button>
+                    </div>
+                    <div class="col-md-6">
+                      <button type="button" class="btn text-center" style="
+              background-color: #cbd1d6;margin: 5px;">FAN</button>
+                    </div>
                   </div>
                 </div>
-                
-                  <div class="progress progress-bar-vertical">
-                  <div class="progress-bar fanspeed" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
-                   
-                  </div>
-                </div>
-              
-                <div class="progress progress-bar-vertical">
-                  <div class="progress-bar fanspeed" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 30px">
-                    
-                  </div>
-                </div>
-                <div class="progress progress-bar-vertical">
-                  <div class="progress-bar fanspeed" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 40px">
-                    
-                  </div>
-                </div>
-                <div class="progress progress-bar-vertical">
-                  <div class="progress-bar fanspeed" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 50px">
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-8">
-                  <h6 class="text-center" style="margin: 5px;">Time</h6>
-                  
-                  <div id="clock" class="light">
-                      <div class="display">
-                      <div class="weekdays"></div>
-                      <div class="ampm"></div>
-                      <div class="alarm"></div>
-                      <div class="digits"></div>
-                      </div>
-                      </div>
-                      
-              </div>
-              </div>
+           
+              </div>  -->
           </div>
         </div>
         </div>
@@ -93,8 +73,27 @@
       </div>
         <div class="row">
             <div class="col-md-5 text-center">
-              <button type="button" class="btn text-center" style="
-              background-color: #cbd1d6;margin: 5px;">MODE</button>
+              <button type="button" class="btn text-center" id="mode" style="
+              background-color: #cbd1d6;margin: 5px;"  data-toggle="modal" data-target=".bd-example-modal-sm">MODE</button>
+            <div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
               <button type="button" class="btn"  style="
               background-color: #cbd1d6;margin: 5px;">CLOCK</button>
                <button type="button" class="btn text-center" style="
@@ -107,19 +106,20 @@
                 <div class="col-md-12">
               <button type="button" class="btn" style="
 
-              background-color: #cbd1d6;margin: 5px;"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+              background-color: #cbd1d6;margin: 5px;" id="tempup"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
              </div>
              <div class="col-md-12">
-                 Temp
+               TEMP</button>
+              
              </div>
              <div class="col-md-12">
              <button type="button" class="btn" style="
-              background-color: #cbd1d6;margin: 5px;"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+              background-color: #cbd1d6;margin: 5px;" id="tempdown"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
                </div>
               </div>
             </div>
             <div class="col-md-5 text-center">
-              <button type="button" class="btn text-center" style="
+              <button type="button" class="btn text-center"  id="fan" style="
               background-color: #cbd1d6;margin: 5px;">FAN</button>
               <button type="button" class="btn"  style="
               background-color: #cbd1d6;margin: 5px;">SWING</button>
@@ -171,59 +171,37 @@
                 
                   <div class="card-body">
                     <div class="row">
-                      <div class="col-6 p-2">
+                      <div class="col-12 p-2">
                        <h5>AC STATUS</h5>
                        <p id="acstatus"></p>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-6 p-2">
-                       <h5>TEMPERATURE</h5>
-                       <p class="temp">25℃</p>
-                      </div>
-                      <div class="col-6 p-2">
-                         
+                      <div class="col-12 p-2">                         
                         <h5>OUTSIDETEMPERATURE</h5>
                         <p id="outtemp"></p>
                        </div>
-                      <!-- <div class="col-6 p-2">
-                       <h5>MODE</h5>
-                       <p id="mode">COOL</p>
-                      </div> -->
                     </div>
-                    <!-- <div class="row">
-                        <div class="col-6 p-2">
-                         <h5>SWING</h5>
-                         <p id="swing">ON</p>
-                        </div>
-                        <div class="col-6 p-2">
-                         <h5>FANSPEED</h5>
-                         <p id="fanspeed">low</p>
-                        </div>
-                      </div> -->
-                      <!-- <div class="row">
-                        <div class="col-6 p-2">
-                         
-                         <h5>OUTSIDETEMPERATURE</h5>
-                         <p id="outtemp">1.65</p>
-                        </div>
-                        <div class="col-6 p-2">
-                         <h5>TURBO</h5>
-                         <p>OFF</p>
-                        </div>
-                      </div> -->
-                       </div>
+                    <div class="row">
+                      <div class="col-12 p-2">
+                       <h5>TEMPERATURE</h5>
+                       <p class="temp" id="temperatures"></p>
+                      </div>
+                     
+                       
+                    </div>
+                     </div>
             </div>
         </div>
-       
+        <div class="col-md-2"></div>
     </div>
      <!-- remote end -->
  
     </div>
     <div class="row m-4">
-        <div class="col-md-6">
+        <!-- <div class="col-md-6">
           <div class="card" style="border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;">
-            <!-- style="border-bottom: 1px solid rgb(160, 157, 157);" -->
+           
             <div class="card-header">  <h4 class="headers pt-2">AC Usage Hours</h4></div>
 
             <div class="card-body">
@@ -234,14 +212,54 @@
         </div>
         <div class="col-md-6">
           <div class="card" style="border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;">
-            <!-- style="border-bottom: 1px solid rgb(160, 157, 157);" -->
+           
             <div class="card-header">  <h4 class="headers pt-2">AC Power Consumption</h4></div>
 
             <div class="card-body">
               <div id="mains" style="width: 100%; height: 400px"></div>
             </div>
           </div>
-        </div>
+        </div> -->
+  <div class="col-md-12">
+        <div class="card">
+     <div class="card-header">
+       <h5>AC STATUS</h5>
+     </div>
+     <div class="card-body">
+      <table class="table" id="myTable">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+     </div>
+
+   </div>
+   </div>
       </div>
       <!-- <div class="row m-4">
           <div class="col-md-12">
@@ -368,129 +386,24 @@
 };
     // use configuration item and data specified to show chart
     myChart.setOption(option);
-  //   $( "#onn" ).click(function() {
-  //   $( ".in" ).toggleClass( "on" );
-  //   // $('#shows').toggleClass("show");
-  // });
-  // $( "#offf" ).click(function() {
-  //   $( ".in" ).toggleClass( "off" );
-   
-  // });
+ 
 
 
 
 
-
-// jquery time plugin
-
+ 
 
 
 
-var clock = $('#clock'),
-alarm = clock.find('.alarm'),
-ampm = clock.find('.ampm');
 
-// Map digits to their names (this will be an array)
-var digit_to_name = 'zero one two three four five six seven eight nine'.split(' ');
-
-// This object will hold the digit elements
-var digits = {};
-
-// Positions for the hours, minutes, and seconds
-var positions = [
-'h1', 'h2', ':', 'm1', 'm2', ':', 's1', 's2'
-];
-
-// Generate the digits with the needed markup,
-// and add them to the clock
-
-var digit_holder = clock.find('.digits');
-
-$.each(positions, function(){
-
-if(this == ':'){
-digit_holder.append('<div class="dots">');
-}
-else{
-
-var pos = $('<div>');
-
-for(var i=1; i<8; i++){
-pos.append('<span class="d' + i + '">');
-}
-
-// Set the digits as key:value pairs in the digits object
-digits[this] = pos;
-
-// Add the digit elements to the page
-digit_holder.append(pos);
-}
-
-});
-
-// Add the weekday names
-
-var weekday_names = 'MON TUE WED THU FRI SAT SUN'.split(' '),
-weekday_holder = clock.find('.weekdays');
-
-$.each(weekday_names, function(){
-weekday_holder.append('<span>' + this + '</span>');
-});
-
-var weekdays = clock.find('.weekdays span');
-
-
-// Run a timer every second and up<a href="https://www.jqueryscript.net/time-clock/">date</a> the clock
-
-(function update_time(){
-
-// Use moment.js to output the current time as a string
-// hh is for the hours in 12-hour format,
-// mm - minutes, ss-seconds (all with leading zeroes),
-// d is for day of week and A is for AM/PM
-
-var now = moment().format("hhmmssdA");
-
-digits.h1.attr('class', digit_to_name[now[0]]);
-digits.h2.attr('class', digit_to_name[now[1]]);
-digits.m1.attr('class', digit_to_name[now[2]]);
-digits.m2.attr('class', digit_to_name[now[3]]);
-digits.s1.attr('class', digit_to_name[now[4]]);
-digits.s2.attr('class', digit_to_name[now[5]]);
-
-// The library returns Sunday as the first day of the week.
-// Stupid, I know. Lets shift all the days one position down, 
-// and make Sunday last
-
-var dow = now[6];
-dow--;
-
-// Sunday!
-if(dow < 0){
-// Make it last
-dow = 6;
-}
-
-// Mark the active day of the week
-weekdays.removeClass('active').eq(dow).addClass('active');
-
-// Set the am/pm text:
-ampm.text(now[7]+now[8]);
-
-// Schedule this function to be run again in 1 sec
-setTimeout(update_time, 1000);
-
-})();
  
  
 
 
 
-$('.sh').click(function() {
-  var cur = $('.sh').index($(this)); // get the index of the clicked link
-  $('.show').removeClass('active'); // hide all of the sections
-  $('.show').eq(cur).addClass('active'); // show the section at the same index of the clicked link 
-});
+ 
+ 
+
 
 
 
@@ -602,6 +515,9 @@ var option = {
 };
 // use configuration item and data specified to show chart
 myChart.setOption(option);
+
+
+ 
 
   </script>
 

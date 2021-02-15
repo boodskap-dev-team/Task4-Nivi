@@ -14,13 +14,15 @@ module.exports = Command;
 Command.prototype.sendRawCommand = function (req,res){
  
     const self = this;
-  self.simulator.nivi(req,res,function(status){
+  self.simulator.commands(req,res,function(status){
  
    if(status) {
           res.json({status:true,result:"Command sent successfully"});
+         
     }
     else{
       res.json({status:false,message:"Error in sending command"});
+    
     }
   });
    

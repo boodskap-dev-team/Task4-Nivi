@@ -18,7 +18,7 @@ var APIRoutes = function (app,router) {
     this.common = new Commons(app);
     this.table = new Tables(app);
     this.student = new Student(app);
-    this.status = new Student(app);
+    this.status = new Status(app);
  this.command=new Command(app);
  this.simulator= new Simulator(app);
 
